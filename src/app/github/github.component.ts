@@ -17,8 +17,8 @@ ngOnInit()  {
 
 
   this.gitHubService.githubApi();
-  this.github = gitHubService
-  console.log(github)
+  this.github = this.gitHubService.github
+  console.log(this.github)
 
 }
 }

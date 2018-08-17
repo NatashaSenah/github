@@ -10,20 +10,22 @@ export class GithubRequestService {
 
   github:Github;
 
-  constructor( private http:HttpClient) {
+  constructor( private http:HttpClient){
+    this.github=new Github("","")
  }
 
 
  githubApi(){
 
     interface ApiResponse{
-        public repos:number;
-        public repos:string
+        avatar_url:string;
+        repos_url:string;
 
     }
     let promise =new Promise((resolve,reject)=>{
         this.http.get<ApiResponse>(environment.apiUrl).toPromise().then(response=>{
-         this.github.
+            this.github.avatar_url=response.avatar_url;
+            this.github.repos_url=response.repos_url;
             console.log(response)
 
             resolve()
