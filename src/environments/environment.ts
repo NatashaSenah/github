@@ -4,7 +4,7 @@
 
 export const environment = {
   production: false ,
-  apiUrl:"https://api.github.com/users/NatashaSenah?access_token=21e1d7633346f8d1b177ec9d12a0b04dc6abd066",
+  apiUrl:"https://api.github.com/users/NatashaSenah?access_token=4104725d78e006d2ab881d58f220fc55471405d7",
 
 };
 
