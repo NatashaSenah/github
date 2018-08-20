@@ -19,13 +19,13 @@ export class GithubRequestService {
 
     interface ApiResponse{
         avatar_url:string;
-        repos_url:string;
+        login:string;
 
     }
     let promise =new Promise((resolve,reject)=>{
         this.http.get<ApiResponse>(environment.apiUrl).toPromise().then(response=>{
             this.github.avatar_url=response.avatar_url;
-            this.github.repos_url=response.repos_url;
+            this.github.login=response.login;
             console.log(response)
 
             resolve()
