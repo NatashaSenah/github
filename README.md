@@ -12,7 +12,7 @@ Slight problem problem when working with the custom directives and making the ap
 ## Technologies Used
 Bootstrap,angular version 10
 ## Support and contact details
-Call:0766889933/E-mail:tashsenah@gmail.com
+Call:0766889933
 ### License
 Copyright 2018 Natasha Senah
 
